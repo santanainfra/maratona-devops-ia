@@ -19,11 +19,11 @@ spec:
         - containerPort: 5432
         env:
         - name: POSTGRES_DB
-          value: "kubedevnews"
+          value: "pegasocloud"
         - name: POSTGRES_USER
-          value: "kubeevnedws"
+          value: "flavio"
         - name: POSTGRES_PASSWORD
-          value: "Pg#123"
+          value: "Faos@341"
 ---
 apiVersion: v1
 kind: Service
@@ -42,7 +42,7 @@ kind: Deployment
 metadata:
   name: kube-news-app
 spec:
-  replicas: 10
+  replicas: 20
   selector:
     matchLabels:
       app: kube-news-app
@@ -64,11 +64,11 @@ spec:
         - name: DB_PORT
           value: "5432"
         - name: DB_DATABASE
-          value: "kubedevnews"
+          value: "pegasocloud"
         - name: DB_USERNAME
-          value: "kubedevnews"
+          value: "flavio"
         - name: DB_PASSWORD
-          value: "Pg#123"
+          value: "Faos@341"
         - name: DB_SSL_REQUIRE
           value: "false"
 ---
