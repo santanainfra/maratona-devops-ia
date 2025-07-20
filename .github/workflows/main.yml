@@ -25,7 +25,7 @@ jobs:
                 file: 02-kube-news/src/Dockerfile
                 push: true
                 tags: |
-                  santanainfra/kube-news-maratona:v${{github.run_number}}
+                  santanainfra/kube-news-maratona:${{github.run_number}}
                   santanainfra/kube-news-maratona:latest
  
     CD:
